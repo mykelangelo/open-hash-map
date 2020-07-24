@@ -1,6 +1,5 @@
 package org.papenko.map;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -10,12 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class OpenHashMapTest {
 
-    private OpenHashMap map;
-
-    @BeforeEach
-    void beforeEach() {
-        map = new OpenHashMap();
-    }
+    private final OpenHashMap map = new OpenHashMap();
 
     @Test
     void size_shouldReturnZero_whenMapWasAlwaysEmpty() {
